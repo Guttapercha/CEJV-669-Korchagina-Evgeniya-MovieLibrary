@@ -28,7 +28,10 @@
         android:inputType="text"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:background="#000"/>
 
     <TextView
         android:id="@+id/textView7"

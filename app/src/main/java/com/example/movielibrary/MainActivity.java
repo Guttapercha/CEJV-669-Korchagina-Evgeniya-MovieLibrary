@@ -19,10 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private List<Movies> moviesList = new ArrayList<>();
     private MovieAdapter movieAdapter;
 
-    public List<Movies> getMoviesList() {
-        return moviesList;
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

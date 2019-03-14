@@ -37,7 +37,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
         }
     }
 
-    MovieAdapter(List<Movies> movieslist) {
+    public MovieAdapter(List<Movies> movieslist) {
         this.movieslist = movieslist;
     }
 
@@ -73,18 +73,18 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
             });
 
 
-//        viewHolder.rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-//
-//            @Override
-//            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromTouch) {
-//                movieslist.get(i).setMovieRating((int)rating);
-//                movieslist.set(i,  movieslist.get(i));
-//                notifyItemChanged(i);
-////                Toast.makeText(, "RATING CHANGED!", Toast.LENGTH_LONG).show();
-//
-//            }
-//        });
-//
+        viewHolder.rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromTouch) {
+                movieslist.get(i).setMovieRating((int)rating);
+                movieslist.set(i,  movieslist.get(i));
+                notifyItemChanged(i);
+//                Toast.makeText(, "RATING CHANGED!", Toast.LENGTH_LONG).show();
+
+            }
+        });
+
     }
 
     private void removeItem(int position) {
