@@ -31,6 +31,7 @@
 
     <RatingBar
         android:id="@+id/movieRating"
+        android:theme="@style/RatingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
@@ -40,11 +41,15 @@
 
     <Button
         android:id="@+id/btn_detete_record"
+        style="@android:style/Widget.Button.Inset"
         android:layout_width="99dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="192dp"
         android:layout_marginTop="40dp"
+        android:background="#B0171F"
         android:text="Delete Record"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toEndOf="@+id/movieID"
         app:layout_constraintTop_toTopOf="parent" />
 

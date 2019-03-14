@@ -1,5 +1,9 @@
 package com.example.movielibrary;
 
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.LayerDrawable;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -21,6 +25,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
         TextView id, name;
         RatingBar rating;
         Button btnDelete;
+
 
         MyViewHolder (final View view) {
             super(view);
@@ -71,17 +76,16 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
 //        viewHolder.rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
 //
 //            @Override
-//            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+//            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromTouch) {
 //                movieslist.get(i).setMovieRating((int)rating);
 //                movieslist.set(i,  movieslist.get(i));
 //                notifyItemChanged(i);
-////                Toast.makeText(MainActivity., "RATING CHANGED!", Toast.LENGTH_LONG).show();
+////                Toast.makeText(, "RATING CHANGED!", Toast.LENGTH_LONG).show();
 //
 //            }
 //        });
-
+//
     }
-
 
     private void removeItem(int position) {
         movieslist.remove(position);
