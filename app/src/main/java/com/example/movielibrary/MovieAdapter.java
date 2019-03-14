@@ -79,12 +79,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromTouch) {
                 movieslist.get(i).setMovieRating((int)rating);
                 movieslist.set(i,  movieslist.get(i));
-                notifyItemChanged(i);
+                notifyDataSetChanged();
 //                Toast.makeText(, "RATING CHANGED!", Toast.LENGTH_LONG).show();
-
             }
         });
-
     }
 
     private void removeItem(int position) {

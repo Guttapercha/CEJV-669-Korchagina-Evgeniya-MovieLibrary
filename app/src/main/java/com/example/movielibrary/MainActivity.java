@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 Movies m;
                 m = new Movies(data.getExtras().getString("name"), (int) Double.parseDouble(data.getExtras().getString("rating")));
                 moviesList.add(m);
+                movieAdapter.notifyDataSetChanged();
                 Toast.makeText(this, "movie "+m.getMovieName()+ " added", Toast.LENGTH_LONG).show();
             }
 
