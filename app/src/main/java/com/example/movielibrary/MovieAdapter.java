@@ -1,5 +1,6 @@
 package com.example.movielibrary;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
@@ -80,7 +81,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
                 movieslist.get(i).setMovieRating((int)rating);
                 movieslist.set(i,  movieslist.get(i));
                 notifyDataSetChanged();
-//                Toast.makeText(, "RATING CHANGED!", Toast.LENGTH_LONG).show();
+                Toast.makeText(ratingBar.getContext(), "RATING CHANGED!", Toast.LENGTH_LONG).show();
             }
         });
     }
