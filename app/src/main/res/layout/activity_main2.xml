@@ -46,6 +46,7 @@
 
     <Button
         android:id="@+id/button_back"
+        style="@android:style/Widget.Holo.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
@@ -57,6 +58,7 @@
 
     <Button
         android:id="@+id/button_save"
+        style="@android:style/Widget.Holo.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="153dp"

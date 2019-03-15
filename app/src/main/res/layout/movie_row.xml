@@ -41,7 +41,7 @@
 
     <Button
         android:id="@+id/btn_detete_record"
-        style="@android:style/Widget.Button.Inset"
+        style="@android:style/Widget.Holo.Button.Borderless"
         android:layout_width="99dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="192dp"
